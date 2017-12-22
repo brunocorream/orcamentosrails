@@ -1,6 +1,6 @@
 <h1>ORÇAMENTOS DIGITAIS | https://cubika.digital</h1>
 <p>
-Esta aplicação tem o objetivo de agilizar o processo quem micro empresários e MEIs passam
+Esta aplicação tem o objetivo de agilizar o processo que Micro Empresários e MEIs passam
 sempre que emitem um novo orçamento e precisão abrir documentos de texto ou
 outro tipo de programa tornando uma tarefa que deveria ser simples e rápida, algo tortuante.
 </p>
