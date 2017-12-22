@@ -1,8 +1,8 @@
 <h1>ORÇAMENTOS DIGITAIS | https://cubika.digital</h1>
 <p>
-Esta aplicação tem o objetivo de agilizar o processo quem micro empresários e MEIs ássam
-sempre que precisão emitir um novo orçamento e precisão abrir documentos de texto ou
-outro tipo de programa tornando uma tarefa que deveria ser simples, algo tortuante.
+Esta aplicação tem o objetivo de agilizar o processo quem micro empresários e MEIs passam
+sempre que emitem um novo orçamento e precisão abrir documentos de texto ou
+outro tipo de programa tornando uma tarefa que deveria ser simples e rápida, algo tortuante.
 </p>
 
 
@@ -14,7 +14,7 @@ outro tipo de programa tornando uma tarefa que deveria ser simples, algo tortuan
     <strong>ETAPA I</strong><br>Criação do ambiente de desenvolvimento e estruturação das páginas HTML + Angular.
     </li>
     <li>
-    <strong>ETAPA II</strong><br>Inclusão da ETAPA I ao backend Rails + Postgresql
+    <strong>ETAPA II</strong><br>Inclusão da <b>ETAPA I</b> ao backend Rails + Postgresql
     </li>
     <li>
     <strong>ETAPA III</strong><br>Atualização da aplicação com a implementação de envios por SMTP e SMS (Ainda sendo validado se será gratuito devido ao fluxo de emails e SMS caso usem como serviço de SPAM).
@@ -24,7 +24,7 @@ outro tipo de programa tornando uma tarefa que deveria ser simples, algo tortuan
 
 <h3>COLABORAÇÃO</h3>
 <p>
-Toda colaboração é bem vinda. Claro! Algumas das sugestões, caso existam, serão analisadas e caso seja aprovadas, ela entra na aplicação e seu nome no desenvolvimento ;)
+Toda colaboração é bem vinda. <br>Claro! Algumas das sugestões, caso existam, serão analisadas e se aprovadas, elas entrarão na aplicação e seu nome no desenvolvimento ;)
 </p>
 
 
