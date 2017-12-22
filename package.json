@@ -1,0 +1,24 @@
+{
+  "name": "orcamentos",
+  "version": "1.0.0",
+  "description": "Aplicação OpenSource de geração de orçamentos de forma facilitada.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brunocorream/orcamentosrails.git"
+  },
+  "author": "Cubika.Digital | Bruno Martins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brunocorream/orcamentosrails/issues"
+  },
+  "homepage": "https://github.com/brunocorream/orcamentosrails#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  }
+}
