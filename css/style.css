@@ -1,0 +1,59 @@
+.container {
+  max-width: 1024px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt100 {
+  margin-top: 100px;
+}
+
+.topHeader {
+  border-top: 1px solid #CCC;
+}
+
+.options,
+.topHeader,
+.description,
+.services,
+.options,
+.bank,
+.numberCnpj {
+  border-left: 1px solid #CCC;
+  border-right: 1px solid #CCC;
+}
+
+.titleTable {
+  background-color: #C0C0C0;
+}
+
+.idItem {
+  width: 5%;
+}
+
+.listProduct {
+  width: 75%;
+}
+
+.priceItem {
+  width: 20%;
+  border-left: 1px solid #CCC;
+}
+
+.itemDesc,
+.itemValue,
+.idItem {
+  border-right: 1px solid #CCC;
+}
+
+.imgSignature {
+  opacity: 0.30;
+}
+
+@media only screen and (min-width: 993px) {
+  .container {
+    width: 95%;
+  }
+}

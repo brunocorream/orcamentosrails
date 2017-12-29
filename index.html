@@ -5,138 +5,133 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" type="text/css" href="./assets/semantic.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 
   <title>Orçamentos Digitais | cubika.digital</title>
 </head>
 
 <body>
-  <header></header>
-  <section class="main">
-    <div class="ui two column centered grid">
-      <div class="column">
-        <form class="ui form">
-          <h4 class="ui dividing header">DADOS DA EMPRESA</h4>
-          <div class="field">
-            <label>Name</label>
-            <div class="two fields">
-              <div class="field">
-                <input type="text" name="shipping[first-name]" placeholder="First Name">
-              </div>
-              <div class="field">
-                <input type="text" name="shipping[last-name]" placeholder="Last Name">
-              </div>
-            </div>
-          </div>
-          <div class="field">
-            <label>Billing Address</label>
-            <div class="fields">
-              <div class="twelve wide field">
-                <input type="text" name="shipping[address]" placeholder="Street Address">
-              </div>
-              <div class="four wide field">
-                <input type="text" name="shipping[address-2]" placeholder="Apt #">
-              </div>
-            </div>
-          </div>
-          <div class="two fields">
-            <div class="field">
-              <label>State</label>
-              <select class="ui fluid dropdown">
-                <option value="">State</option>
-                <option value="AL">Alabama</option>
-              </select>
-            </div>
-            <div class="field">
-              <label>Country</label>
-              <div class="ui fluid search selection dropdown">
-                <input type="hidden" name="country">
-                <i class="dropdown icon"></i>
-                <div class="default text">Select Country</div>
-                <div class="menu">
-                  <div class="item" data-value="af">
-                    <i class="af flag"></i>Afghanistan</div>
-                </div>
-              </div>
-            </div> 
-          </div>
-          <h4 class="ui dividing header">DADOS DO CLIENTE</h4>
-          <div class="field">
-            <label>Card Type</label>
-            <div class="ui selection dropdown">
-              <input type="hidden" name="card[type]">
-              <div class="default text">Type</div>
-              <i class="dropdown icon"></i>
-              <div class="menu">
-                <div class="item" data-value="visa">
-                  <i class="visa icon"></i>
-                  Visa
-                </div>
-                <div class="item" data-value="amex">
-                  <i class="amex icon"></i>
-                  American Express
-                </div>
-                <div class="item" data-value="discover">
-                  <i class="discover icon"></i>
-                  Discover
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="fields">
-            <div class="seven wide field">
-              <label>Card Number</label>
-              <input type="text" name="card[number]" maxlength="16" placeholder="Card #">
-            </div>
-            <div class="three wide field">
-              <label>CVC</label>
-              <input type="text" name="card[cvc]" maxlength="3" placeholder="CVC">
-            </div>
-            <div class="six wide field">
-              <label>Expiration</label>
-              <div class="two fields">
-                <div class="field">
-                  <select class="ui fluid search dropdown" name="card[expire-month]">
-                    <option value="">Month</option>
-                  </select>
-                </div>
-                <div class="field">
-                  <input type="text" name="card[expire-year]" maxlength="4" placeholder="Year">
-                </div>
-              </div>
-            </div>
-          </div>
-          <h4 class="ui dividing header">Receipt</h4>
-          <div class="field">
-            <label>Send Receipt To:</label>
-            <div class="ui fluid multiple search selection dropdown">
-              <input type="hidden" name="receipt">
-              <i class="dropdown icon"></i>
-              <div class="default text">Saved Contacts</div>
-              <div class="menu">
-                <div class="item" data-value="jenny" data-text="Jenny">
-                  <img class="ui mini avatar image" src="/images/avatar/small/jenny.jpg"> Jenny Hess
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ui segment">
-            <div class="field">
-              <div class="ui toggle checkbox">
-                <input type="checkbox" name="gift" tabindex="0" class="hidden">
-                <label>Do not include a receipt in the package</label>
-              </div>
-            </div>
-          </div>
-          <div class="ui button" tabindex="0">Submit Order</div>
-        </form>
+  <header>
+    <nav>
+      <div class="nav-wrapper">
+        <div class="container">
+          <a href="./" class="brand-logo">ORÇAMENTOS</a>
+          <a href="#" data-activates="mobile-demo" class="button-collapse">
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="right hide-on-med-and-down">
+            <li>
+              <a href="sass.html">Página Inicial</a>
+            </li>
+            <li>
+              <a href="badges.html">Quem Somos</a>
+            </li>
+            <li>
+              <a href="collapsible.html">Contrate-nos</a>
+            </li>
+            <li>
+              <a href="mobile.html">Contato</a>
+            </li>
+          </ul>
+          <ul class="side-nav" id="mobile-demo">
+            <li>
+              <a href="sass.html">Página Inicial</a>
+            </li>
+            <li>
+              <a href="badges.html">Quem Somos</a>
+            </li>
+            <li>
+              <a href="collapsible.html">Contrate-nos</a>
+            </li>
+            <li>
+              <a href="mobile.html">Contato</a>
+            </li>
+          </ul>
+        </div>
       </div>
+    </nav>
+  </header>
+  <section class="main">
+    <div class="container">
+      <form class="row mt100">
+        <div class="col s8 push-s2">
+          <div class="dadosdoCliente">
+            <h4>DADOS DA EMPRESA - CONTRATADA</h4>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="nomeCompleto" type="text" class="validate">
+                <label for="nomeCompleto">Nome Completo</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m4">
+                <input id="nomeCompleto" type="text" class="validate">
+                <label for="nomeCompleto">CPF/CNPJ</label>
+              </div>
+              <div class="input-field col s12 m8">
+                <input id="nomeCompleto" type="text" class="validate">
+                <label for="nomeCompleto">Nome da empresa</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m4">
+                <input id="nomeCompleto" type="text" class="validate">
+                <label for="nomeCompleto">Telefone</label>
+              </div>
+              <div class="input-field col s12 m8">
+                <input id="nomeCompleto" type="text" class="validate">
+                <label for="nomeCompleto">Email</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12">
+                <div class="file-field input-field">
+                  <div class="btn">
+                    <span>LOGOMARCA</span>
+                    <input type="file">
+                  </div>
+                  <div class="file-path-wrapper">
+                    <input class="file-path validate" type="text" placeholder="Envie a marca da empresa">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="dadosdaEmpresa">
+            <h4>DADOS DO CLIENTE - CONTRATANTE</h4>
+            <div class="row">
+              <div class="input-field col s12">
+                <input id="nomeCompleto" type="text" class="validate">
+                <label for="nomeCompleto">Nome do cliente</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s12 m4">
+                <input id="nomeCompleto" type="text" class="validate">
+                <label for="nomeCompleto">CPF/CNPJ</label>
+              </div>
+              <div class="input-field col s12 m8">
+                <input id="nomeCompleto" type="text" class="validate">
+                <label for="nomeCompleto">Nome da empresa</label>
+              </div>
+            </div>
+          </div>
+          <div class="center">
+            <a href="./orcamento.html" class="btn waves-effect waves-light" type="submit" name="action">Ir para o Orçamento
+              <i class="material-icons right">send</i>
+            </a>
+          </div>
+        </div>
+      </form>
     </div>
   </section>
   <footer></footer>
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
     crossorigin="anonymous"></script>
-  <script src="./assets/semantic.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 
 </html>

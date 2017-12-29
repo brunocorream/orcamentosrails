@@ -1,0 +1,61 @@
+$borderColor:#CCC;
+$borderExpessure: 1px solid;
+.container {
+    max-width: 1024px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt100 {
+    margin-top: 100px;
+}
+
+.topHeader {
+    border-top: $borderExpessure $borderColor;
+}
+
+.options,
+.topHeader,
+.description,
+.services,
+.options,
+.bank,
+.numberCnpj {
+    border-left: $borderExpessure $borderColor;
+    border-right: $borderExpessure $borderColor;
+}
+
+.titleTable {
+    background-color: #C0C0C0;
+}
+
+.idItem {
+    width: 5%;
+}
+
+.listProduct {
+    width: 75%;
+}
+
+.priceItem {
+    width: 20%;
+    border-left: $borderExpessure $borderColor;
+}
+
+.itemDesc,
+.itemValue,
+.idItem {
+    border-right: $borderExpessure $borderColor;
+}
+
+.imgSignature {
+    opacity: 0.30;
+}
+
+@media only screen and (min-width: 993px) {
+    .container {
+        width: 95%;
+    }
+}

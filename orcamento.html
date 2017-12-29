@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -6,27 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="./assets/semantic.min.css">
-    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
 
     <title>Orçamentos Digitais | cubika.digital</title>
 </head>
 
 <body>
-    <header></header>
+    <header>
+        <nav>
+            <div class="nav-wrapper">
+                <div class="container">
+                    <a href="./" class="brand-logo">ORÇAMENTOS</a>
+                    <a href="#" data-activates="mobile-demo" class="button-collapse">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li>
+                            <a href="sass.html">Página Inicial</a>
+                        </li>
+                        <li>
+                            <a href="badges.html">Quem Somos</a>
+                        </li>
+                        <li>
+                            <a href="collapsible.html">Contrate-nos</a>
+                        </li>
+                        <li>
+                            <a href="mobile.html">Contato</a>
+                        </li>
+                    </ul>
+                    <ul class="side-nav" id="mobile-demo">
+                        <li>
+                            <a href="sass.html">Página Inicial</a>
+                        </li>
+                        <li>
+                            <a href="badges.html">Quem Somos</a>
+                        </li>
+                        <li>
+                            <a href="collapsible.html">Contrate-nos</a>
+                        </li>
+                        <li>
+                            <a href="mobile.html">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
     <section class="main">
-        <div class="ui two column centered grid">
-            <div class="column">
-                <div class="topHeader">
-                    <table class="ui celled table">
+        <div class="container">
+            <div class="col s12 m10 l10">
+                <div class="topHeader mt100">
+                    <table class="bordered">
                         <tr>
                             <th>
-                                <figure>
-                                    <img src="./images/cubika-digital.png" width="200px" alt="">
-                                </figure>
+                                <img class="responsive-img" src="./images/cubika-digital.png" width="250px" alt="">
                             </th>
-                            <th class="center aligned">10.805.028/0001-50</th>
-                            <th class="center aligned">NÚMERO: 201801
+                            <th class="center numberCnpj">10.805.028/0001-50</th>
+                            <th class="center-align">NÚMERO: 201801
                                 <br>DATA: 01/01/2018</th>
                         </tr>
                         <tr>
@@ -37,9 +74,9 @@
                     </table>
                 </div>
                 <div class="description">
-                    <table class="ui celled table">
+                    <table class="bordered">
                         <tr>
-                            <td class="center aligned active" colspan="3">
+                            <td class="center-align titleTable" colspan="3">
                                 <b>ESPECIFICAÇÕES DO ORÇAMENTO</b>
                             </td>
                         </tr>
@@ -49,82 +86,97 @@
                     </table>
                 </div>
                 <div class="services">
-                    <table class="ui celled table">
+                    <table class="bordered">
                         <tr>
-                            <td class="center aligned active" colspan="3">
+                            <td class="center-align titleTable" colspan="3">
                                 <b>DESCRIÇÃO DOS SERVIÇOS</b>
                             </td>
                         </tr>
                         <tr>
-                            <td class="idItem">ITEM</td>
-                            <td class="listProduct center aligned">LISTA DE SERVIÇOS/PRODUTOS</td>
-                            <td class="priceItem center aligned">VALOR
+                            <td class="idItem center-align">ITEM</td>
+                            <td class="listProduct center">LISTA DE SERVIÇOS/PRODUTOS</td>
+                            <td class="priceItem center">VALOR
                                 <b>(R$)</b>
                             </td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="idItem center-align">01</td>
+                            <td class="listProduct">Nome do produto ou serviço</td>
+                            <td class="priceItem center">200,00</td>
                         </tr>
                         <tr>
-                                <td class="right aligned" colspan="2">
-                                    <strong>DESCONTO</strong>
-                                </td>
-                                <td>R$ %</td>
-                            </tr>
-                        <tr>
-                            <td class="right aligned" colspan="2">
-                                <strong>INVESTIMETO</strong>
+                            <td class="itemDesc" colspan="2">
+                                <strong class="right">DESCONTO</strong>
                             </td>
-                            <td>R$ 9.999,99</td>
+                            <td class="center-align">15%</td>
+                        </tr>
+                        <tr>
+                            <td class="itemValue" colspan="2">
+                                <strong class="right">INVESTIMETO</strong>
+                            </td>
+                            <td class="center-align">9.999,99</td>
                         </tr>
                     </table>
                 </div>
                 <div class="options">
-                    <table class="ui celled table">
+                    <table class="bordered">
                         <tr>
-                            <td class="center aligned active" colspan="3">
+                            <td class="center-align titleTable" colspan="3">
                                 <b>ITENS OPCIONAIS</b>
                             </td>
                         </tr>
                         <tr>
-                            <td class="idItem">ITEM</td>
-                            <td class="listProduct center aligned">LISTA DE OPCIONAIS</td>
-                            <td class="priceItem center aligned">VALOR
+                            <td class="idItem center-align">ITEM</td>
+                            <td class="listProduct center">LISTA DE OPCIONAIS</td>
+                            <td class="priceItem center">VALOR
                                 <b>(R$)</b>
                             </td>
                         </tr>
                         <tr>
-                            <td></td>
-                            <td></td>
-                            <td></td>
+                            <td class="idItem center-align">01</td>
+                            <td class="listProduct">Nome do produto ou serviço</td>
+                            <td class="priceItem center">1.200,00</td>
                         </tr>
                     </table>
                 </div>
                 <div class="bank">
-                    <table class="ui celled table">
+                    <table class="bordered">
                         <tr>
-                            <td class="center aligned active" colspan="3">
+                            <td class="center-align titleTable" colspan="3">
                                 <b>DADOS BANCÁRIOS</b>
                             </td>
                         </tr>
                         <tr>
-                            <td colspan="3"></td>
+                            <td colspan="3">
+                                <strong>BANCO:</strong> BANCO DO BRASIL
+                                <br>
+                                <strong>AGÊNCIA:</strong> 4232-3
+                                <br>
+                                <strong>CONTA CORRENTE:</strong> 30426-3
+                                <br>
+                                <strong>NOME:</strong> BRUNO CORREA MARTINS
+                                <br>
+                            </td>
                         </tr>
-                        <tr class="assinatura">
+                        <tr class="signature">
                             <td colspan="3">
                                 <spam class="left">
                                     <strong>Contato: </strong>Bruno Martins - (27)988.749.003</spam>
-                                <spam class="right aligned">Orçamento válido por 7 dias a partir da data de emissão.</spam>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="right aligned" colspan="3">
-                                <img src="./images/cubika-digital.png" height="20px" alt="">
+                                <spam class="right">Orçamento válido por 7 dias a partir da data de emissão.</spam>
                             </td>
                         </tr>
                     </table>
+                    <div class="imgSignature right mt10">
+                        <img src="./images/cubika-digital.png" height="20px" alt="">
+                    </div>
+                </div>
+                <div class="center mt100">
+                    <a href="./" class="btn waves-effect waves-light" type="submit" name="action">Voltar para oformulário
+                        <i class="material-icons left">restore</i>
+                    </a>
+                    <a href="./contrato.html" class="btn waves-effect waves-light" type="submit" name="action">Continuar para o contrato
+                        <i class="material-icons right">send</i>
+                    </a>
                 </div>
             </div>
         </div>
@@ -132,7 +184,8 @@
     <footer></footer>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous"></script>
-    <script src="./assets/semantic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
