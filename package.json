@@ -4,7 +4,8 @@
   "description": "Aplicação OpenSource de geração de orçamentos de forma facilitada.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "commitmsg": "validate-commit-msg"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,37 @@
   },
   "homepage": "https://github.com/brunocorream/orcamentosrails#readme",
   "devDependencies": {
+    "conventional-changelog": "^1.1.7",
+    "cz-conventional-changelog": "^2.1.0",
     "gulp": "^3.9.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0"
-  }
+    "gulp-sass": "^3.1.0",
+    "husky": "^0.14.3",
+    "validate-commit-msg": "^2.14.0"
+  },
+  "config": {
+    "validate-commit-msg": {
+      "types": [
+        "feat",
+        "fix",
+        "docs",
+        "style",
+        "refactor",
+        "perf",
+        "test",
+        "chore",
+        "revert",
+        "ci",
+        "build"
+      ],
+      "warnOnFail": false,
+      "maxSubjectLength": 100,
+      "subjectPattern": ".+",
+      "subjectPatternErrorMsg": "subject does not match subject pattern!",
+      "helpMessage": ""
+    },
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+ }
 }
